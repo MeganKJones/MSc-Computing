@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h3 class="allTitle">Post history</h3>
+<div class="allFlowerPos">
+    <img src="/static/img/flower.png" class="allFlower">
+</div>
+
+<hr class="allHR">
+
+<div class="sort">
+    <h5>Sort: <a href="{{ url_for('allPostsDesc') }}">Newest</a> ● <a href="{{ url_for('allPostsAsc') }}">Oldest</a></h5>
+</div>
+
+{% for post in posts %}
+<div class="fullPost">
+    <a href="{{ url_for('post', post_id=post.id) }}" class="titleLink">
+        <h1 class="postTitle">{{post.title}}</h1>
+        <div class="picturePosition"><img src="{{ url_for('static', filename='img/' + post.image_file) }}" class="allPicture">
+        </div>
+    </a>
+    <p class="postUsername">Author: {{ post.user.Forename }} {{ post.user.Surname }}</p>
+    <p class="postContent">{{ post.content | safe }}</p>
+</div>
+
+<div class="divider">
+    <img src="/static/img/divider.png" class="smallFlower">
+    <img src="/static/img/divider.png">
+    <img src="/static/img/divider.png" class="smallFlower">
+</div>
+{% endfor %}
+
+{% endblock content %}

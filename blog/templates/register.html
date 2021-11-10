@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h3 id="registerTitle">Make an account <br> Join the fun!</h3>
+<div class="flowerDiv">
+  <img src="/static/img/flower.png" id="registerFlower">
+</div>
+<hr id=registerHR>
+
+<div class="registerForm">
+  <table>
+    <form method="POST" action="">
+      {{ form.csrf_token }}
+      <tr>
+        <td>{{ form.username.label }}</td>
+        <td>{{ form.username }}{% for error in form.username.errors %} <span style="color: red;">[{{ error }}]</span> {% endfor %}</td>
+      </tr>
+      <tr>
+        <td>{{ form.Forename.label }}</td>
+        <td>{{ form.Forename }}</td>
+      </tr>
+      <tr>
+        <td>{{ form.Surname.label }}</td>
+        <td>{{ form.Surname }}</td>
+      </tr>
+      <tr>
+        <td>{{ form.email.label }}</td>
+        <td>{{ form.email }}{% for error in form.email.errors %} <span style="color: red;">[{{ error }}]</span> {% endfor %}</td>
+      </tr>
+      <tr>
+        <td>{{ form.password.label }}</td>
+        <td>{{ form.password }}{% for error in form.password.errors %} <span style="color: red;">[{{ error }}]</span> {% endfor %}</td>
+      </tr>
+      <tr>
+        <td>{{ form.confirm_password.label }}</td>
+        <td>{{ form.confirm_password }}{% for error in form.confirm_password.errors %} <span style="color: red;">[{{ error }}]</span>{% endfor %}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Register" class="myButton submit"></td>
+      </tr>
+    </form>
+  </table>
+</div>
+
+{% endblock content %}

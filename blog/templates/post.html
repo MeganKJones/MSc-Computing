@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div id="main">
+    <div id="left">
+        <div class="favourite">
+            <form  method="POST" action="{{ url_for('add_favourite', post_id=post.id) }}" >
+                {{ form.hidden_tag() }}
+                <p class="favouriteWord">favourite</p>{{ form2.submit }}
+            </form>
+        </div>
+
+        <h1 id="titlePost">{{ post.title }}</h1>
+        <img src="{{ url_for('static', filename='img/' + post.image_file) }}" id="imagePost">
+        <p id="authorPost">Author: {{ post.user.Forename }} {{ post.user.Surname }}</p>
+        <p id="contentPost">{{ post.content | safe }}</p>
+        <div class="allFlowerPos">
+            <img src="/static/img/flower.png" class="allFlower">
+        </div>
+        <p>{{post.date}}</p>
+    </div>
+
+    <div id="right">
+        <div id="comments">
+            <h3 id="commentTitlePost">Comment Section</h3>
+            {% for comment in comments %}
+                <p><small>{{ comment.user.username }} said: </small>"{{ comment.content }}"</p>
+            {% endfor %}
+        </div>
+
+        <div id="commentPost">
+            <form method="POST" action="{{ url_for('post_comment', post_id=post.id) }}">
+                {{ form.hidden_tag() }}
+                <table>
+                    <tr>
+                        <td>{{ form.comment.label }}</td>
+                        <td>{{ form.comment }} {% for error in form.comment.errors %}<span style="color: red;">[{{ error}}]</span>{% endfor %}</td>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>{{ form.submit() }}</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

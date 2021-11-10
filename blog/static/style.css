@@ -1,0 +1,700 @@
+/*ORDERED BY HTML.PAGE/ TYPE OF SELECTOR/ ALPHABETICAL*/
+
+/*****************************************ABOUT css*****************************************************/
+/*ID*/
+#aboutTitle {
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #f4f9f9;
+    text-shadow:0px 1px 0px #cc0e73;
+    font-size: 40px;
+}
+#profile {
+    width: 120px;
+    border: 5px solid #cc0e74;
+    border-radius: 120px;
+}
+#skillsSubtitle {
+    margin: 5px 0 20px 0;
+}
+#skillsTitle {
+    text-align: center;
+    font-size:25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #b34180;
+}
+/*CLASS*/
+.aboutHR {
+    width: 10%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #b34180;
+}
+.intro {
+    padding: 0 20px 20px 20px;
+}
+.introText1 {
+    width: 500px;
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.introText2 {
+    width: 96%;
+    padding-left: 5px;
+}
+.introTitle {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size:40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline #f1d4d4 wavy;
+}
+.runner {
+    background-color: #f4f9f9;
+    width:60%;
+    border-style:dotted;
+    border-width: thick;
+    border-color: #f1d1d0;
+    border-radius: 17px;
+    padding: 20px;
+    margin: 20px auto auto auto;
+    text-align:center;
+}
+.skills {
+    padding: 20px;
+    padding-top: 10px;
+}
+.smallFlower {
+    width: 40px
+}
+.star {
+    color: goldenrod;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.workTitle {
+    color: #b34180;
+    font-size: 30px;
+}
+/*TAG*/
+table {
+    margin:auto;
+}
+/***********************************************ALL POSTS css*************************************************/
+/*CLASS*/
+.allFlower {
+    width: 40px;
+}
+.allFlowerPos {
+    text-align: center;
+}
+.allHR {
+    width: 10%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #b34180;
+}
+.allPicture {
+    text-align: center;
+    border: solid thick #b34180;
+}
+.allTitle {
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #f4f9f9;
+    text-shadow:0px 1px 0px #cc0e73;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.button {
+    display: inline-block;
+    text-align:center;
+    background-color: #f4f9f9;
+    color: #cc0e74;
+    border: solid #f1d4d4;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    border-radius: 150%;
+    border-width: 3px;
+    margin: 5px;
+}
+.currentButton {
+    display: inline-block;
+    text-align:center;
+    background-color: #cc0e73;
+    color:#f4f9f9;
+    border: solid #f1d4d4;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    border-radius: 50%;
+    border-width: 3px;
+    margin: 5px;
+}
+.divider {
+    text-align: center;
+}
+.pageNums {
+    text-align: center;
+    margin-top: 20px;
+}
+.picturePosition {
+    text-align: center;
+}
+.sort {
+    text-align: center;
+}
+/********************************************FAVOURTITE css********************************************/
+/*ID*/
+#favouritesContainer1 {
+    width:100%;
+}
+#favouritesContainer2 {
+    margin: 20px auto auto auto;
+    padding: 15px 20px 15px 20px;
+    text-align:center;
+    width: 70%;
+    background-color: #f4f9f9;
+    border-style: dotted;
+    border-radius: 20px;
+    border-width: thick;
+    border-color: #f1d4d4;
+}
+/*******************************************************HOME css************************************************/
+/*ID*/
+#flower {
+    height: 40px;
+    width: 40px;
+    display: inline-block
+}
+#flowerHR {
+    width: 20%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #f4f9f9;
+    height: 2px;
+    margin-left: 100px;
+}
+#fullHome {
+    width:100%;
+    display: flex;
+}
+#hi {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 40px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#homeLink {
+    color:#ffffff;
+}
+#hometitle {
+    color: #f4f9f9;
+    text-align: center;
+    padding-top: 20px;
+}
+#leftHome {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+#meg {
+    font-family: 'Pacifico', cursive;
+    display: block;
+    margin:0;
+    padding: 0;
+}
+#postHR {
+    width: 90%;
+    height: 3px;
+    border-style: none;
+    background-color: #cc0e74;
+}
+#postPicture {
+    border-style: solid;
+    border-width: thick;
+    border-color: #c060a1;
+    margin: auto;
+}
+#postPreview {
+    color: #b34180;
+    margin-right: 700px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#postLoop {
+    background-color:#f4f9f9;
+    height:fit-content;
+    border-style:dotted;
+    border-width: thick;
+    border-color: #f1d1d0;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left:20px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+}
+#rightHome {
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+    background-color:#cc0e74;
+    color: #f4f9f9;
+    height: fit-content;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 0;
+}
+#rightTitle {
+    font-family: 'Berkshire Swash', cursive;
+    margin: 0;
+    font-size: 20px;
+    color: #f4f9f9;
+    padding: 0 20px 0 45px;
+}
+#sideFlower {
+    width: 30px;
+    padding-left: 35px;
+}
+#sideHR {
+    width: 70%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #f4f9f9;
+    height: 2px;
+    margin-right: 25px;
+    margin-left: 40px;
+    padding-left: 15px;
+    margin-top: 6px;
+}
+#titleHR {
+    width: 85%;
+    border-style: dotted none none none;        
+    border-width: 15px
+}
+/*CLASS*/
+.fullPost {
+    background-color: #f4f9f9;
+    width: 70%;
+    border-style:dotted;
+    border-width: thick;
+    border-color: #f1d1d0;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin: 20px auto 20px auto;
+}
+.linkContent {
+    color: #a94caf;
+}
+.postContent {
+    margin: 0 auto;
+    width: 90%;
+}
+.postPicture {
+    text-align: center;
+}
+.postTitle {
+    text-align: center;
+    font-size: 30px;
+    color: #c060a1;
+    text-decoration-line: underline;
+    text-decoration-color: #f1d4d4;
+}
+.postUsername {
+    text-align: center;
+}
+.titleLinkHome {
+    color: #cc0e74;
+}
+/*PSEUDO*/
+#homeLink:hover {
+    color: #e6739f;
+}
+.postTitle:hover {
+    color: #cc0e74;
+}
+/****************************************LAYOUT css*******************************************************/
+/*ID*/
+#close {
+    border-style: none none solid solid;
+    border-color: #cc0e74;
+    border-width: 2px;
+    border-radius: 3px;
+    width: 11px;
+    height: fit-content;
+    margin: 0;
+    padding: 1px 1px 1px 4px;
+}
+#flashes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #f8a1d1;
+    border-style: solid;
+    border-color: #cc0e74;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+    color: #f4f9f9;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 15px;
+    width: 15%;
+    height: 20%;
+    margin: auto
+}
+#footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #f4f9f9;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 20px;
+}
+#footerContact {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#footerHR {
+    width: 40%;
+    border-style: dotted none none none;        
+    border-width: 7px;
+}
+#giticon {
+    border-radius: 40px;
+}
+#header {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    color:#f4f9f9;
+    background-color: #cc0e74;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#logo {
+    width: 80px;
+}
+#messageBox {
+    padding-left: 10px;
+}
+#personalised {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*CLASS*/
+.greeting {
+    font-family: 'Pacifico', cursive;
+}
+.header {
+    padding: 16px;
+    font-size: 20px;
+    margin:0;
+    color: #f4f9f9;
+}
+.icons {
+    width: 35px;
+    padding: 5px;
+}
+.myButton {
+	background-color:#e6739f;
+	border-radius:23px;
+	border:2px solid #f1d4d4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:17px;
+	padding:6px 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc0e73;
+}
+/*TAG*/
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #e6739f;
+    font-family: 'Merriweather', serif;
+    color: #cc0e74;
+}
+/*PSEUDO*/
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton:hover {
+	background-color:#b34180;
+}
+#flashes span:hover{
+    cursor: pointer;   
+}
+.header:hover {
+    color: #f1d4d4;
+    font-family: 'Pacifico', cursive;
+}
+/****************************************LOGIN css***********************************************************/
+/*ID*/
+#loginFlower {
+    width: 40px;
+}
+#loginHR {
+    width: 10%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #b34180;
+}
+#loginTitle {
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #f4f9f9;
+    text-shadow:0px 1px 0px #cc0e73;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+/*CLASS*/
+.flowerDiv {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.loginForm {
+    background-color: #f4f9f9;
+    width: 30%;
+    border-radius: 15px;
+    border-style:dotted;
+    border-width: thick;
+    border-color: #f1d1d0;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    padding-top: 30px;
+}
+.registerLink {
+    text-decoration: none;
+    color: #a94caf;
+    font-size: 14px;
+    font-family: 'Pacifico', cursive;
+}
+.submit {
+    margin-left: 90px;
+}
+/************************************************POST css*******************************************************/
+/*ID*/
+#authorPost {
+    text-decoration: underline #e6739f;
+
+}
+#comments {
+    background-color:#f4f9f9;
+    border-style: dotted;
+    border-radius: 20px;
+    border-width: thick;
+    border-color: #f1d4d4;
+    margin-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#commentPost {
+    background-color:#f4f9f9;
+    border-style: dotted;
+    border-radius: 20px;
+    border-width: thick;
+    border-color: #f1d4d4;
+    padding: 7px;
+}
+#commentPost input#submit {
+    background-color:#e6739f;
+	border-radius:23px;
+	border:2px solid #f1d4d4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:17px;
+	padding:6px 11px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc0e73;
+}
+#commentTitlePost {
+    font-family: 'Pacifico', cursive;
+}
+#imagePost {
+    border: solid thick #b34180;
+}
+#left {
+    display: inline-block;
+    width: 65%;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f4f9f9;
+    border-style: dotted;
+    border-radius: 20px;
+    border-width: thick;
+    border-color: #f1d4d4;
+}
+#main {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+}
+#right {
+    display: inline-block;
+    width: 25%;
+    height:fit-content;
+    margin-left: 20px;   
+}
+#titlePost {
+    text-decoration: underline #e6739f;
+    color: #c060a1;
+    font-size: 40px;
+}
+/*CLASS*/
+.favourite {
+    text-align: right;
+}
+.favourite input#submit{
+    background-color:transparent;
+    border-color: transparent;
+	border-radius:21px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffeb14;
+	font-family:Arial;
+	font-size:30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b88400;
+    padding: 0;
+    margin: 0;
+}
+.favouriteWord {
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.likeButton {
+	background-color:transparent;
+    border-color: transparent;
+	border-radius:21px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ed0505;
+	font-family:Arial;
+	font-size:26px;
+	padding: 0;
+    margin: 0;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #940000;
+}
+/*PSUEDO*/
+#commentPost input#submit:active {
+	position:relative;
+	top:1px;
+}
+#commentPost input#submit:hover {
+	background-color:#b34180;
+}
+.favouriteButton:active {
+	position:relative;
+	top:1px;
+}
+.favouriteButton:hover {
+	background-color:transparent;
+    border-color: transparent;
+}
+.likeButton:active {
+	position:relative;
+	top:1px;
+}
+.likeButton:hover {
+	background-color:transparent;
+    border-color: transparent;
+}
+/**********************************REGISTER css*********************************************************/
+/*ID*/
+#registerFlower {
+    width: 40px;
+}
+#registerTitle {
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #f4f9f9;
+    text-shadow:0px 1px 0px #cc0e73;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+#registerHR {
+    width: 10%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #b34180;
+}
+/*CLASS*/
+.registerForm {
+    background-color: #f4f9f9;
+    width: 30%;
+    border-radius: 15px;
+    border-style:dotted;
+    border-width: thick;
+    border-color: #f1d1d0;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    padding-top: 30px;
+}
+/************************************************RESULTS.HTML****************************************************/
+/*ID*/
+#resultTitle {
+    color: #c060a1;
+    text-decoration-line: underline;
+    text-decoration-color: #f1d4d4;
+}
+#searchHR {
+    width: 10%;
+    border-style: dotted none none none;        
+    border-width: 5px;
+    border-color: #b34180;
+}
+#searchTitle {
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: #f4f9f9;
+    text-shadow:0px 1px 0px #cc0e73;
+    font-size: 40px;   
+}
+/*CLASS*/
+.fullResults {
+    background-color: #f4f9f9;
+    width: 60%;
+    margin: 20px auto 0 auto;
+    border-style:dotted;
+    border-width: thick;
+    border-color: #f1d1d0;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+/*PSEUDO*/
+#resultTitle:hover {
+    color: #cc0e74;
+}
+
+

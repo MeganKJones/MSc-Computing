@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 id="searchTitle">Search Results</h1>
+<hr id="searchHR">
+
+<div>
+    {% for post in results %}
+    <div class="fullResults">
+        <a href="{{ url_for('post', post_id=post.id) }}" class="titleLink">
+            <h1 id="resultTitle">{{post.title}}</h1>
+            <img src="{{ url_for('static', filename='img/' + post.image_file) }}" id="imagePost">
+        </a>
+        {{post.content | safe}}
+        <div class="allFlowerPos">
+            <img src="/static/img/flower.png" class="allFlower">
+        </div>
+        <small><p>{{post.date}}</p></small>
+        <hr id="searchHR">
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

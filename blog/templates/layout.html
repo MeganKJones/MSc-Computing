@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel=stylesheet type=text/css href="{{ url_for('static',
+  filename='style.css') }}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Merriweather&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel=icon href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title><Megsite> Welcome</title>
+</head>
+<body>
+  <div id="header">
+    <img src="/static/img/logo.png" id="logo">
+    <a href="{{ url_for('home') }}" class="header">Home</a>
+    <p>●</p>
+    <a href="{{ url_for('about') }}" class="header">About me</a>
+    <p>●</p>
+    <a href="{{ url_for('allPostsDesc') }}" class="header">All posts</a>
+    <p>●</p>
+
+    {% if current_user.is_authenticated %}
+      <p class="header greeting" id="personalised">Hello, {{ current_user.Forename }}!</p><p>●</p>
+      <a href="{{ url_for('favourite') }}" class="header">Favourites</a>
+      <p>●</p>
+      <a href="{{ url_for('logout') }}" class="header">Logout</a>
+
+    {% else %}
+      <p class="header greeting">Hello, friend!</p><p>●</p> <a href="{{ url_for('login') }}" class="header">Login</a>
+      <p>●</p>
+      <a href="{{ url_for('register') }}" class="header">Register</a>
+    {% endif %}
+
+    <form id="form" role="search" class="header" action="{{ url_for('search') }}" method="get">
+      <input type="search" id="query" name="q"
+      placeholder="search..."
+      aria-label="Search through site content">
+      <button class="myButton">search</button>
+    </form>
+  </div>
+
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="flex-box" id="flashes">
+        {% for message in messages %}
+          <p id="messageBox">{{ message }}</p>
+          <span id='close' onclick='this.parentNode.parentNode.removeChild(this.parentNode); return false;'>x</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+  <div id="footer">
+    <hr id="footerHR">
+    <p id="footerContact">Contact me</p>
+    <a href="https://git.cardiff.ac.uk/c21017593"><img src="/static/img/gitlab.png" id="giticon" class="icons"> </a>
+    <a href="https://www.instagram.com/cardiffuni/?hl=en"><img src="/static/img/instagram.png" class="icons"> </a>
+    <a href="https://www.pinterest.co.uk/search/pins/?q=goats&rs=typed&term_meta[]=goats%7Ctyped"><img src="/static/img/pinterest.png" class="icons"></a>
+    <a href="https://twitter.com/cardiffuni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/static/img/twitter.png" class="icons"></a>
+    <a href="https://www.youtube.com/watch?v=5Rh518rjWH8&ab_channel=FunnyVines"><img src="/static/img/youtube.png" class="icons"></a>
+    <a href="https://www.facebook.com/pg/cardiffuni/groups/"><img src="/static/img/facebook.png" class="icons"></a>
+    <a href="mailto:jonesmk1@cardiff.ac.uk"><img src="/static/img/mail.png" class="icons"></a>
+    <p>Made by Megan Jones for Cardiff University <em>CMT-120 Fundimentals of programming</em></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h3 id="loginTitle">Welcome back <br> friend!</h3>
+<div class="flowerDiv">
+  <img src="/static/img/flower.png" id="loginFlower">
+</div>
+<hr id=loginHR>
+
+<table class="loginForm">
+  <form method="POST" action="">
+    {{ form.csrf_token }}
+    <tr>
+      <td>{{ form.email.label }} </td>
+      <td>{{ form.email }}</td>
+    </tr>
+    <tr>
+      <td>{{ form.password.label }}</td>
+      <td>{{ form.password }}</td>
+    </tr>
+    <tr>
+      <td><a href="{{ url_for('register') }}" class="registerLink">Register here</a></td>
+      <td><input type="submit" value="Login" class="myButton submit"></td>
+    </tr>
+  </form>
+</table>
+
+{% endblock content %}

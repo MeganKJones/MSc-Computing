@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 id="aboutTitle">About me</h1>
+<hr id=titleHR>
+
+<div class="runner">
+<div class="intro">
+    <h3 class="introTitle">Hello friend!</h3>
+    <img src="/static/img/profile.jpg" id="profile">
+    <p class="introText1">As you've probably seen, i'm Meg. <br>
+        I have a degree in Criminology from Keele University and am currently undergoing a Msc in Computing at Cardiff University. Before starting at Cardiff university I had absolutely no experience in anything computer related, but still thought applying for a masters in the subject was a good idea- so here I am!</p>  
+    <p class="introText2">I live in Cardiff with my parents and our numerous pets (two dogs, two cats, two turtles and tropical fish). In the few minutes of the day i'm not doing uni work, I like to read, paint, crochet or pretty much anything else craft-based that your grandma might be interested in.</p>
+</div>
+
+<hr class="aboutHR">
+
+<div class="previousWork">
+    <h3 class="workTitle">Previous work</h3>
+    <h4>WHSmith 2014-2018</h4>
+    <p>This was the first job I ever had and looking back, it wasn't too bad. I worked here during my a-levels and when I came home for the summer during my university years. I spent most of my time on the tills, tidying the shelves and trying to find books for customers based on their vague descriptions, such as "it's blue" or "it has a dog on the front cover".</p>
+    <h4>Wales Millennium Centre 2018-2019</h4>
+    <p>This was probably the easiest job I had. I would work on the theatre bars serving drinks and snacks before the show and during the interval. If we finished tidying early, we got to leave early and still got paid. Alternatively, they totally did illegal things such as only giving us 1 30 minute break if we did a 12 hour shift and sending us home without pay if they'd scheduled more people than they needed. yay!</p>
+    <h4>Cineworld 2019-2020</h4>
+    <p>This job made me really appreciate old people, since they don't buy and food/drink and dont leave any rubbish in the screens. Working during Avengers: Endgame was probably the closest to hell i've ever been. However, I still miss it because most of the people there made it fun to go to work.</p>
+</div>
+
+<hr class="aboutHR">
+
+<div class="skills">
+    <h3 id="skillsTitle">Computing Skills</h3>
+    <p id="skillsSubtitle">(so far)</p>
+    <table>
+        <tr>
+            <td>Python</td>
+            <td class="star">★★★</td>
+            <td>SQL</td>
+            <td class="star">★★</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td class="star">★★★</td>
+            <td>Flask</td>
+            <td class="star">★</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td class="star">★★★</td>
+            <td>OpenShift</td>
+            <td class="star">★</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td class="star">★★★</td>
+            <td>Jinja</td>
+            <td class="star">★</td>
+        </tr>
+    </table>
+</div>
+</div>
+{% endblock content %}
+

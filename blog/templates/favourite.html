@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1 id="aboutTitle">{{ current_user.Forename }}'s Favourite Posts</h1>
+<hr id=titleHR>
+
+<div id="favouritesContainer1">
+    {% for post in posts %}
+    <div id="favouritesContainer2">
+        <a href="{{ url_for('post', post_id=post.id) }}" class="titleLink">
+            <h3 class="postTitle">{{ post.title }}</h3>
+            <img src="{{ url_for('static', filename='img/' + post.image_file) }}" id="postPicture">
+        </a>
+        <p>author: {{ post.user.Forename }} {{ post.user.Surname }}</p>
+        <p>{{ post.content | safe }}</p>
+        <p>{{post.date}}</p>
+    </div>
+
+    <hr id="searchHR">
+    <div class="allFlowerPos">
+        <img src="/static/img/flower.png" class="allFlower">
+    </div>
+    
+{% endfor %}
+</div>
+
+{% endblock content %}
+

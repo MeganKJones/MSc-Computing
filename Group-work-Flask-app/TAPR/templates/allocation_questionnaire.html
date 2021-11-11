@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+{% block sub_header %}
+    <h1 id=JI_Title>Pre-Allocation Questionnaire</h1>
+{% endblock sub_header %}
+
+{% block content %}
+
+
+    <form action="", method="post" novalidate>
+    {{form.csrf_token}}
+
+      <!--Drop down box-->
+      <p>
+        {{ form.native_speaker.label() }}
+        {{ form.native_speaker() }}
+        <!--error message-->
+        {% for error in form.native_speaker.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+      </p>
+
+      <p>
+        {{ form.coding_experience.label() }}
+        {{ form.coding_experience() }}
+        <!--error message-->
+        {% for error in form.coding_experience.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+      </p>
+
+      <p>
+        {{ form.degree_program.label() }}
+        {{ form.degree_program() }}
+        <!--error message-->
+        {% for error in form.degree_program.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+      </p>
+
+      <!--Clear button-->
+      <input id=JI_submit class="JI_Button" type="Reset" value="Reset">
+      
+      <!--Submit button-->
+      <p>
+        <input id=JI_submit class="JI_Button" type="submit" value="Submit">
+      </p>
+
+    </form>
+
+
+
+{% endblock content %}

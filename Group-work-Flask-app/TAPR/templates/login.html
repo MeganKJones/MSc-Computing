@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1 id=MJ_loginWelcome>Welcome back</h1>
+<h2 id=MJ_loginTitle>Login to enter</h2>
+
+<div id="MJ_loginForm">
+<form action="" method="post">
+    {{form.csrf_token}}
+    <table>
+        <tr>
+            <td class="MJ_loginTable">
+            {{form.id.label(class_="lb")}}
+            </td>
+            <td class="MJ_loginTable">
+            {{form.id(class_="inputline")}}
+            </td>
+        </tr>
+        <tr>
+            <td class="MJ_loginTable">
+            {{form.password.label(class_="lb")}}
+            </td>
+            <td class="MJ_loginTable">
+            {{form.password(class_="inputline")}}
+            </td>
+        </tr>
+        <tr>
+            <td class="MJ_loginTable">
+            <a id="MJ_registerLink" href="{{ url_for('register') }}"> Not Registered?</a>
+            </td>
+            <td class="MJ_loginButton" id="MJ_loginButton">
+            {{form.submit(class_="btn")}}
+            </td>
+        </tr>
+    </table>
+</form>
+</div>
+{% endblock content %}

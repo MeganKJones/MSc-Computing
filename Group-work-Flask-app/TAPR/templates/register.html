@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2 id="MJ_registerTitle">Register</h2>
+<h4 id="MJ_registerSubtitle">as a new user</h4>
+
+<form class = "row" id="MJ_registerForm" method="POST" action="">
+  <table>
+    <tr>
+      <td class="MJ_registerTable label">
+        {{ form.csrf_token }}
+        {{ form.first_name.label }}
+      </td>
+      <td class="MJ_registerTable">
+        {{ form.first_name (placeholder="Enter your first name", class_="registerBox") }}
+      </td>
+    </tr>
+    <tr>
+      <td class="MJ_registerTable label">
+        {{ form.last_name.label }}
+      </td>
+      <td class="MJ_registerTable">
+        {{ form.last_name (placeholder="Enter your surname", class_="registerBox")}}
+      </td>
+    </tr>
+    <tr>
+      <td class="MJ_registerTable label">
+        {{ form.id.label }} 
+      </td>
+      <td class="MJ_registerTable">
+        {{ form.id (placeholder="Enter your student number", class_="registerBox")}}
+      </td>
+    </tr>
+    <tr>
+      <td class="MJ_registerTable label">
+        {{ form.email.label }}
+      </td>
+      <td class="MJ_registerTable">
+        {{ form.email (placeholder="Enter your email", class_="registerBox")}}
+        {% for error in form.email.errors %} 
+          <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td class="MJ_registerTable label">
+        {{ form.password.label }}
+      </td>
+      <td class="MJ_registerTable">
+        {{ form.password (placeholder="Type in a password between 6 and 8 characters in length", class_="registerBox")}}
+        {% for error in form.password.errors %}
+          <span class = "p-2" style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td class="MJ_registerTable label">
+        {{ form.confirm_password.label }}
+      </td>
+      <td class="MJ_registerTable">
+        {{ form.confirm_password (placeholder="Re-type your password", class_="registerBox")}}
+        {% for error in form.confirm_password.errors %}
+          <span class = "p-2" style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td class="MJ_registerTable">
+        <input type="submit" id="MJ_registerButton" value="Register">
+      </td>
+    </tr>
+</table>
+</form>
+{% endblock content %}

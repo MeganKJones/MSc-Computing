@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block sub_header %}
+    <h2>Individual Contribution Percentage Calculation</h2>
+{% endblock sub_header %}
+
+{% block content %}
+    <div id="team_allocation">
+    <table>
+    {% for a in assessment %}
+    <tr>
+    <td>{{ a.module_info }}</td>
+    <td><a href="{{ url_for('calculate_mark_assessment', assessment_id = a.id) }}">Select</a></td>
+    </tr>
+    {% endfor %}
+    </table>
+    </div>
+{% endblock content %}

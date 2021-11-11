@@ -1,0 +1,11 @@
+Student ID: 21017593
+Module: CMT202
+
+Assumptions for this assessment:
+
+Task 1: I have assumed that each new user added must be unique.
+Task 2: I have assumed that the only information that should be returned is the user_name.
+Task 3: I have assumed that each new author added must be unique.
+Task 5: I have assumed that each new book added does not have to be unique.
+Task 11: I have assumed that if the user has loaned any book in the past, they should not be deleted: 
+	 even if they currently do not have any books on loan.
